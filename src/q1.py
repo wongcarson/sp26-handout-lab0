@@ -17,9 +17,9 @@ def is_palindrome(s: str) -> bool:
         bool: True if the string is a palindrome, False otherwise.
     """
     result = ""
-    for ch in s:
-        if ch.isalnum():
-            result += ch.lower()
+    for character in s:
+        if character.isalnum():
+            result += character.lower()
 
     left = 0
     right = len(result) - 1
