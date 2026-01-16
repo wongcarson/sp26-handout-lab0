@@ -16,16 +16,16 @@ def is_palindrome(s: str) -> bool:
     Returns:
         bool: True if the string is a palindrome, False otherwise.
     """
-    new = ""
+    result = ""
     for ch in s:
         if ch.isalnum():
-            new += ch.lower()
+            result += ch.lower()
 
     left = 0
-    right = len(new) - 1
+    right = len(result) - 1
 
     while left < right:
-        if new[left] != new[right]:
+        if result[left] != result[right]:
             return False
         left += 1
         right -= 1
